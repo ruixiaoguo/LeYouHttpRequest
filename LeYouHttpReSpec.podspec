@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "KeyChain"
+  s.name         = "LeYouHttpReSpec"
   s.version      = "1.0"
-  s.summary      = "钥匙串保存"
+  s.summary      = "乐游网络请求模块"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   iOS 钥匙串保存设备信息封装库
+                   iOS 乐游网络请求模块
                    DESC
 
   s.homepage     = "https://github.com/ruixiaoguo/LeYouHttpRequest.git"
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
     s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+    s.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -133,6 +133,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+    s.dependency "AFNetworking"
 
 end

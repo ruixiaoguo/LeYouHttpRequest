@@ -1,0 +1,6 @@
+platform :ios, '10.0'
+target “LeYouHttpRequest” do
+pod 'AFNetworking', '~> 3.1.0'
+
+# use_framework !
+end

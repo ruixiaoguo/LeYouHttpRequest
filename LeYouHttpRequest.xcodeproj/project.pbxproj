@@ -14,9 +14,12 @@
 		21135C4522FAD7C600A64C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21135C4322FAD7C600A64C28 /* LaunchScreen.storyboard */; };
 		21135C4822FAD7C600A64C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21135C4722FAD7C600A64C28 /* main.m */; };
 		21135C5122FAD7F500A64C28 /* LYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21135C5022FAD7F500A64C28 /* LYRequest.m */; };
+		21135C5422FAD9BC00A64C28 /* SLifeNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21135C5322FAD9BC00A64C28 /* SLifeNetClient.m */; };
+		9A8E0FC43B5CB69EA01D469D /* libPods-LeYouHttpRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E746A1E1B03C689A10739E /* libPods-LeYouHttpRequest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		139E3E2107FA09B331B759F5 /* Pods-LeYouHttpRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeYouHttpRequest.debug.xcconfig"; path = "Target Support Files/Pods-LeYouHttpRequest/Pods-LeYouHttpRequest.debug.xcconfig"; sourceTree = "<group>"; };
 		21135C3522FAD7C500A64C28 /* LeYouHttpRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeYouHttpRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21135C3822FAD7C500A64C28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21135C3922FAD7C500A64C28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,10 @@
 		21135C4722FAD7C600A64C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21135C4F22FAD7F500A64C28 /* LYRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRequest.h; sourceTree = "<group>"; };
 		21135C5022FAD7F500A64C28 /* LYRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRequest.m; sourceTree = "<group>"; };
+		21135C5222FAD9BC00A64C28 /* SLifeNetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLifeNetClient.h; sourceTree = "<group>"; };
+		21135C5322FAD9BC00A64C28 /* SLifeNetClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLifeNetClient.m; sourceTree = "<group>"; };
+		3E13E02CC6C23005D218A12E /* Pods-LeYouHttpRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeYouHttpRequest.release.xcconfig"; path = "Target Support Files/Pods-LeYouHttpRequest/Pods-LeYouHttpRequest.release.xcconfig"; sourceTree = "<group>"; };
+		85E746A1E1B03C689A10739E /* libPods-LeYouHttpRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeYouHttpRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8E0FC43B5CB69EA01D469D /* libPods-LeYouHttpRequest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				21135C3722FAD7C500A64C28 /* LeYouHttpRequest */,
 				21135C3622FAD7C500A64C28 /* Products */,
+				EBA0DE4B6BE70D6977EDA81C /* Pods */,
+				5BEC35657E992723218DCCE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +90,27 @@
 			children = (
 				21135C4F22FAD7F500A64C28 /* LYRequest.h */,
 				21135C5022FAD7F500A64C28 /* LYRequest.m */,
+				21135C5222FAD9BC00A64C28 /* SLifeNetClient.h */,
+				21135C5322FAD9BC00A64C28 /* SLifeNetClient.m */,
 			);
 			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		5BEC35657E992723218DCCE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85E746A1E1B03C689A10739E /* libPods-LeYouHttpRequest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBA0DE4B6BE70D6977EDA81C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				139E3E2107FA09B331B759F5 /* Pods-LeYouHttpRequest.debug.xcconfig */,
+				3E13E02CC6C23005D218A12E /* Pods-LeYouHttpRequest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21135C4B22FAD7C600A64C28 /* Build configuration list for PBXNativeTarget "LeYouHttpRequest" */;
 			buildPhases = (
+				D9CC5AAA47C2BE882346C12D /* [CP] Check Pods Manifest.lock */,
 				21135C3122FAD7C500A64C28 /* Sources */,
 				21135C3222FAD7C500A64C28 /* Frameworks */,
 				21135C3322FAD7C500A64C28 /* Resources */,
@@ -149,12 +179,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D9CC5AAA47C2BE882346C12D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeYouHttpRequest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21135C3122FAD7C500A64C28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				21135C5122FAD7F500A64C28 /* LYRequest.m in Sources */,
+				21135C5422FAD9BC00A64C28 /* SLifeNetClient.m in Sources */,
 				21135C3D22FAD7C500A64C28 /* ViewController.m in Sources */,
 				21135C4822FAD7C600A64C28 /* main.m in Sources */,
 				21135C3A22FAD7C500A64C28 /* AppDelegate.m in Sources */,
@@ -297,6 +353,7 @@
 		};
 		21135C4C22FAD7C600A64C28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 139E3E2107FA09B331B759F5 /* Pods-LeYouHttpRequest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +370,7 @@
 		};
 		21135C4D22FAD7C600A64C28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E13E02CC6C23005D218A12E /* Pods-LeYouHttpRequest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
